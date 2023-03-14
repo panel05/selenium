@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="success.js"></script>
     <title>Selenium</title>
 </head>
 <body>
@@ -10,13 +12,15 @@
 
     </header>
     <article>
-        <form action="/action.php">
+        <form action="/action.php" method="GET">
             <label for="country_code">Country code:</label>
             <input type="text" id="country_code" name="country_code"
             pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
             <input type="submit">
     </form>
-        <div class="success-message"></div>
+        <div class="success-message" style="display: none;">
+        
+        </div>
     </article>
     <footer>
         <p>Pantl Alex Balázs</p>
